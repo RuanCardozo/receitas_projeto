@@ -1,0 +1,40 @@
+- users:
+    id
+    name
+    email
+    password
+
+- recipes:
+    id
+    name
+    ingredients
+    preparation
+    time
+    category_id
+    user_id
+
+- categories:
+    id
+    type
+    user_id
+
+    --users--
+--users x recipes--
+    um usuario pode criar varias receitas
+
+--users x categories--
+    um usuario pode ter varias categorias
+
+    --recipes--
+--recipes x users--
+    uma receita sempre vai pertencer a um unico usuario
+
+--recipes x categories--
+    uma receita sempre vai pertencer a uma categoria
+
+    --category--
+--categories x recipes --
+    uma categoria pode ter varias receitas
+
+--categories x users--
+    uma categoria vai sempre pertencer a um usuario
